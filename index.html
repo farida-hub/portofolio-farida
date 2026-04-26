@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Farida Novalia Masda</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'soft-blue': '#D1E9F6',
+              'cream-yellow': '#FFF9D0',
+              'dark-blue': '#4A628A',
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body class="font-jakarta text-dark-blue overflow-hidden bg-gradient-to-br from-soft-blue to-cream-yellow">
+
+    <!-- Background -->
+    <div class="bg-container">
+        <img src="img/bg-home.jpg" alt="Background" class="bg-img">
+        <div class="bg-overlay"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[92%] max-w-5xl">
+        <div class="glass-nav flex justify-between items-center px-8 py-4 rounded-full shadow-xl">
+            <div class="font-serif-italic text-2xl font-bold text-dark-blue">Farida.</div>
+            <ul class="flex gap-6 md:gap-10 text-base font-semibold text-dark-blue/80">
+                <li><button onclick="showSection('home')" class="nav-btn active" data-target="home">Home</button></li>
+                <li><button onclick="showSection('profile')" class="nav-btn" data-target="profile">Profile</button></li>
+                <li><button onclick="showSection('experience')" class="nav-btn" data-target="experience">Experience</button></li>
+                <li><button onclick="showSection('works')" class="nav-btn" data-target="works">Skills & Cert</button></li>
+                <li><button onclick="showSection('contact')" class="nav-btn" data-target="contact">Contact</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="fixed inset-0 flex items-center justify-center p-6 pointer-events-none z-10">
+        <div class="content-wrapper pointer-events-auto">
+            
+            <!-- HOME -->
+            <section id="home" class="content-section active">
+                <div class="glass-card p-8 md:p-16 rounded-[40px] relative animate-fade-in glow-effect mx-auto" style="max-width: 900px;">
+                    <div class="sparkle sparkle-1"></div><div class="sparkle sparkle-2"></div>
+                    <div class="sparkle sparkle-3"></div><div class="sparkle sparkle-4"></div>
+                    <div class="floating-star floating-star-1">✦</div>
+                    <div class="floating-star floating-star-2">✧</div>
+                    <div class="floating-star floating-star-3">✦</div>
+                    <span class="absolute top-8 right-8 text-3xl opacity-40 text-dark-blue twinkle">✦</span>
+                    <span class="absolute bottom-8 left-8 text-2xl opacity-30 text-dark-blue twinkle">✦</span>
+                    
+                    <h1 class="text-[70px] md:text-[120px] font-extrabold text-white leading-none tracking-tighter uppercase select-none drop-shadow-lg gradient-text text-center mb-2">portfolio</h1>
+                    <p class="font-serif-italic text-3xl md:text-5xl text-dark-blue text-center relative z-10 mt-4 mb-8" style="font-family: 'Playfair Display', serif; font-style: italic; font-weight: 600;">Farida Novalia Masda</p>
+                    
+                    <div class="flex flex-wrap justify-center gap-6 text-dark-blue font-semibold text-base">
+                        <a href="https://www.linkedin.com/in/farida-novalia-masda-1a6363370" target="_blank" class="flex items-center gap-3 hover:scale-105 transition bg-white/60 px-6 py-3 rounded-full shadow-sm"><span>in</span> LinkedIn</a>
+                        <a href="mailto:faridanovaliamasda24995@gmail.com" class="flex items-center gap-3 hover:scale-105 transition bg-white/60 px-6 py-3 rounded-full shadow-sm"><span>✉</span> Email</a>
+                        <a href="https://instagram.com/rridanovaly_" target="_blank" class="flex items-center gap-3 hover:scale-105 transition bg-white/60 px-6 py-3 rounded-full shadow-sm"><span>📷</span> Instagram</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PROFILE -->
+            <section id="profile" class="content-section hidden">
+                <div class="glass-card p-10 md:p-14 rounded-[40px] animate-fade-in max-w-4xl mx-auto">
+                    <div class="flex flex-col md:flex-row gap-10 items-center">
+                        <div class="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-white shadow-xl flex-shrink-0 bg-soft-blue">
+                            <img src="img/profil.jpg" alt="Farida" class="w-full h-full object-cover">
+                        </div>
+                        <div class="text-center md:text-left w-full">
+                            <h2 class="text-4xl font-bold text-dark-blue mb-3">Farida Novalia Masda</h2>
+                            <p class="text-lg font-serif-italic text-dark-blue/80 mb-5">Mahasiswi Teknik Informatika | UI/UX Designer | Developer</p>
+                            <div class="bg-white/70 p-6 rounded-2xl text-base text-gray-700 leading-relaxed text-left shadow-sm">
+                                Mahasiswi semester 4 Teknik Informatika di Politeknik Negeri Jember dengan IPS 3,80. Berpengalaman dalam Public Speaking, UI/UX Design, dan Pengembangan Web/Mobile (Java, HTML, CSS). Telah mengerjakan proyek pengembangan sistem kasir UMKM dan aplikasi pelaporan sampah ilegal. Disiplin, komunikatif, mampu bekerja dalam tim, dan selalu bersemangat menghadapi tantangan baru.
+                            </div>
+                            <div class="mt-5 flex flex-wrap gap-3 justify-center md:justify-start">
+                                <span class="px-4 py-2 bg-soft-blue text-dark-blue rounded-full text-sm font-semibold shadow-sm">UI/UX Design</span>
+                                <span class="px-4 py-2 bg-cream-yellow text-dark-blue rounded-full text-sm font-semibold shadow-sm">Front-end Dev</span>
+                                <span class="px-4 py-2 bg-soft-blue text-dark-blue rounded-full text-sm font-semibold shadow-sm">QA Testing</span>
+                                <span class="px-4 py-2 bg-cream-yellow text-dark-blue rounded-full text-sm font-semibold shadow-sm">Public Speaking</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- EXPERIENCE (HANYA SATU!) -->
+            <section id="experience" class="content-section hidden">
+                <div class="glass-card rounded-[30px] animate-fade-in relative h-[85vh] flex flex-col">
+                    <div class="exp-header rounded-t-[30px]">
+                        <h2 class="text-2xl md:text-3xl font-bold text-dark-blue text-center">Pengalaman & Proyek</h2>
+                    </div>
+                    <div class="exp-scroll-area space-y-4">
+                        
+                        <!-- 1. Simpelsi -->
+                        <div class="exp-card" onclick="openModal('simpelsi')">
+                            <div class="flex flex-col sm:flex-row gap-4 items-start">
+                                <div class="w-full sm:w-1/4 flex-shrink-0">
+                                    <div class="aspect-video rounded-xl overflow-hidden bg-gradient-to-br from-soft-blue to-cream-yellow border border-white shadow-sm flex items-center justify-center">
+                                        <img src="img/simpelsi.jpg" alt="Simpelsi" class="w-full h-full object-cover" onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'text-dark-blue/50 text-xs font-semibold\'>Simpelsi</span>'">
+                                    </div>
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="font-bold text-dark-blue text-lg mb-1">Front-end Web & Mobile Developer & Tester</h3>
+                                    <p class="text-xs text-dark-blue/70 italic mb-2">Aplikasi Simpelsi (PBL) • Ags 2025 – Des 2025</p>
+                                    <p class="text-sm text-gray-600 leading-relaxed line-clamp-2">Mengembangkan tampilan antarmuka aplikasi berbasis web dan mobile, serta melakukan pengujian sistem untuk memastikan kualitas.</p>
+                                    <span class="inline-block mt-2 text-xs font-semibold text-dark-blue/80">Klik untuk detail →</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 2. Fortune Wash -->
+                        <div class="exp-card" onclick="openModal('fortuneWash')">
+                            <div class="flex flex-col sm:flex-row gap-4 items-start">
+                                <div class="w-full sm:w-1/4 flex-shrink-0">
+                                    <div class="aspect-video rounded-xl overflow-hidden bg-gradient-to-br from-cream-yellow to-soft-blue border border-white shadow-sm flex items-center justify-center">
+                                        <img src="img/fortune-wash.jpg" alt="Fortune Wash" class="w-full h-full object-cover" onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'text-dark-blue/50 text-xs font-semibold\'>Fortune Wash</span>'">
+                                    </div>
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="font-bold text-dark-blue text-lg mb-1">Project Manager & Tester</h3>
+                                    <p class="text-xs text-dark-blue/70 italic mb-2">Aplikasi Fortune Wash (PBL) • Feb 2025 – Jun 2025</p>
+                                    <p class="text-sm text-gray-600 leading-relaxed line-clamp-2">Mengelola proyek dengan Agile Scrum, mengatur tugas tim, serta melakukan pengujian dan dokumentasi bug.</p>
+                                    <span class="inline-block mt-2 text-xs font-semibold text-dark-blue/80">Klik untuk detail →</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 3. CAVI -->
+                        <div class="exp-card" onclick="openModal('cavi')">
+                            <div class="flex flex-col sm:flex-row gap-4 items-start">
+                                <div class="w-full sm:w-1/4 flex-shrink-0">
+                                    <div class="aspect-video rounded-xl overflow-hidden bg-gradient-to-br from-soft-blue to-cream-yellow border border-white shadow-sm flex items-center justify-center">
+                                        <img src="img/cavi.jpg" alt="CAVI" class="w-full h-full object-cover" onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'text-dark-blue/50 text-xs font-semibold\'>CAVI</span>'">
+                                    </div>
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="font-bold text-dark-blue text-lg mb-1">UI/UX Designer</h3>
+                                    <p class="text-xs text-dark-blue/70 italic mb-2">Aplikasi CAVI (PBL) • Sep 2024 – Des 2024</p>
+                                    <p class="text-sm text-gray-600 leading-relaxed line-clamp-2">Merancang wireframe, mockup, dan prototype user-friendly menggunakan Figma, serta berkolaborasi dengan developer.</p>
+                                    <span class="inline-block mt-2 text-xs font-semibold text-dark-blue/80">Klik untuk detail →</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- SKILLS -->
+            <section id="works" class="content-section hidden">
+                <div class="glass-card p-10 md:p-14 rounded-[40px] animate-fade-in max-w-4xl mx-auto">
+                    <h2 class="text-3xl font-bold text-dark-blue mb-8 text-center">Keterampilan & Sertifikat</h2>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-10">
+                        <div class="bg-white/70 p-5 rounded-2xl text-center hover:shadow-lg transition border border-white/80"><div class="text-3xl mb-2">☕</div><p class="font-bold text-dark-blue text-lg">Java</p></div>
+                        <div class="bg-white/70 p-5 rounded-2xl text-center hover:shadow-lg transition border border-white/80"><div class="text-3xl mb-2">🎨</div><p class="font-bold text-dark-blue text-lg">Figma</p></div>
+                        <div class="bg-white/70 p-5 rounded-2xl text-center hover:shadow-lg transition border border-white/80"><div class="text-3xl mb-2">🌐</div><p class="font-bold text-dark-blue text-lg">HTML & CSS</p></div>
+                        <div class="bg-white/70 p-5 rounded-2xl text-center hover:shadow-lg transition border border-white/80"><div class="text-3xl mb-2">🗄️</div><p class="font-bold text-dark-blue text-lg">MySQL</p></div>
+                    </div>
+                    <div class="bg-cream-yellow/80 p-6 rounded-2xl border border-white/80 text-center shadow-sm">
+                        <h3 class="text-xl font-bold text-dark-blue mb-2">🏆 Juara 3 Poster Terbaik</h3>
+                        <p class="text-base text-gray-700">Java Tech Exhibition 3.0 2026 • TIF Politeknik Negeri Jember PSDKU Nganjuk</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONTACT -->
+<section id="contact" class="content-section hidden text-center">
+    <div class="glass-card p-8 md:p-12 rounded-[40px] animate-fade-in max-w-2xl mx-auto">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6 drop-shadow-lg">Let's work together!</h2>
+        
+        <div class="flex flex-col gap-4 text-dark-blue font-semibold">
+            <!-- Email -->
+            <a href="mailto:faridanovaliamasda24995@gmail.com" 
+               class="bg-white/80 p-4 rounded-2xl flex items-center justify-center gap-3 hover:bg-white transition shadow-md text-sm md:text-base">
+                <span class="text-xl">📧</span> faridanovaliamasda24995@gmail.com
+            </a>
+            
+            <!-- WhatsApp (Link) -->
+            <a href="https://wa.me/6281234057231?text=Halo%20Farida,%20saya%20tertarik%20bekerja%20sama%20dengan%20Anda" 
+               target="_blank"
+               class="bg-white/80 p-4 rounded-2xl flex items-center justify-center gap-3 hover:bg-white transition shadow-md text-sm md:text-base">
+                <span class="text-xl">💬</span> Chat via WhatsApp
+            </a>
+            
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/farida-novalia-masda-1a6363370" 
+               target="_blank"
+               class="bg-white/80 p-4 rounded-2xl flex items-center justify-center gap-3 hover:bg-white transition shadow-md text-sm md:text-base">
+                <span class="text-xl">💼</span> LinkedIn Profile
+            </a>
+        </div>
+        
+        <p class="mt-6 text-sm text-dark-blue/70">Based in Nganjuk, Jawa Timur • Available for Internship & Freelance</p>
+    </div>
+</section>
+
+    <!-- MODAL -->
+    <div id="projectModal" class="fixed inset-0 z-[100] hidden" style="display: none;">
+        <div class="modal-backdrop" onclick="closeModal()"></div>
+        <div class="modal-container">
+            <button class="modal-close" onclick="closeModal()">✕</button>
+            <div class="modal-content"></div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/modal.js"></script>
+</body>
+</html>
